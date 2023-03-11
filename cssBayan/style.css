@@ -52,6 +52,7 @@ html {
     background: red;
     height: 20rem;
 }
+
 .content:hover {
     cursor: pointer;
     background: red;
