@@ -18,11 +18,11 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 .body {
     margin: 0 auto;
+    max-height: fit-content;
     height: 100vh;
     background: #c7c6c6;
 }
@@ -30,8 +30,8 @@ html {
 .box {
     max-width: 55rem;
     width: 100%;
-    max-height: fit-content;
-    height: 100%;
+    max-height: 100%;
+    height: fit-content;
     margin: 0 auto;
     background: #c8b594;
     padding-top: 0.5rem;
@@ -101,9 +101,9 @@ html {
 }
 
 .content:target .content-img {
-    max-height: 80%;
+    max-height: 75%;
     height: auto;
-    width: 50%;
+    width: 60%;
     text-align: center;
     opacity: 1;
     visibility: visible;
@@ -116,9 +116,9 @@ html {
 
 @media (hover: hover) {
     .content:hover .content-img {
-        max-height: 80%;
+        max-height: 75%;
         height: auto;
-        width: 50%;
+        width: 60%;
         text-align: center;
         opacity: 1;
         visibility: visible;
@@ -131,15 +131,15 @@ html {
     /*видимость и поворот иконки*/
     .box:hover .content-icon {
         opacity: 1;
-        rotate: 135deg;
+        rotate: 225deg;
     }
 
     .content:hover .content-icon {
         opacity: 1;
-        rotate: 0deg;
+        rotate: 360deg;
     }
 }
 
 .content:target .content-icon {
-    rotate: 0deg;
+    rotate: 180deg;
 }
